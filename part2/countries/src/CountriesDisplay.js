@@ -8,7 +8,7 @@ const displayCountries =
         return (
             <div key={country.name}>
                 <p>{country.name}</p>
-                <CountryDetail country={country}/>
+                <CountryDetail country={country} defaultShow={showCountries.length===1? true : false}/>
             </div>
         )
     });

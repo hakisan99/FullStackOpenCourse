@@ -1,10 +1,9 @@
 import React from 'react';
-import {useState} from 'react';
 
-const CountryDetail = ({country}) => {
-    const [showDetails, setShowDetails] = useState(false);
+const CountryDetail = ({country,defaultShow}) => {
+    let showDetails = defaultShow;
     const clickToShow = () => {
-        setShowDetails(!showDetails)
+        showDetails = !showDetails
     }
 
     if(showDetails){

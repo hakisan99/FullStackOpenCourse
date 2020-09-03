@@ -8,7 +8,6 @@ import axios from 'axios';
 function App() {
   const [findText,setFindText] = useState('');
   const [countries,setCountries] = useState([]);
-  console.log(process.env.REACT_APP_API_KEY)
   useEffect(() => {
     axios
       .get(`https://restcountries.eu/rest/v2/all`)
