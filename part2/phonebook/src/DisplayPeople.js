@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const DisplayPeople = ({PeopleToshow}) => {
+const DisplayPeople = ({PeopleToshow,deletePerson}) => {
     return (
     <div>
     <h2>Numbers</h2>
@@ -9,6 +9,7 @@ const DisplayPeople = ({PeopleToshow}) => {
         <div key={person.name}>
             <p>{person.name}</p>
             <p>{person.number}</p>
+            <button onClick={()=> deletePerson(person.id)} >Delete</button>
         </div>
         )}
     </div>

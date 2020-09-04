@@ -1,0 +1,19 @@
+.message-action-success {
+    margin: 0.5rem;
+    color: green;
+    border: green 2px solid;
+    background-color: lightgreen;
+    width: 100%;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.message-action-error {
+    margin: 0.5rem;
+    color: red;
+    border: red 2px solid;
+    background-color: lightpink;
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+}
